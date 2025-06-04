@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: adafruit-proxy
+    env: static
+    buildCommand: ""
+    startCommand: php -S 0.0.0.0:10000
+    plan: free
+    envVars:
+      - key: AIO_USER
+        value: YOUR_AIO_USERNAME
+      - key: AIO_KEY
+        value: YOUR_AIO_KEY
