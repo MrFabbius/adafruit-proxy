@@ -1,7 +1,7 @@
  <?php
 // ✅ Configura le tue credenziali Adafruit IO
-$io_username = "Miauz";            // il tuo username Adafruit IO
-$io_key = "aio_uVeN68jRUrevuXcQRwVn8ok6ZVzI"; // la tua AIO Key personale
+$io_username = getenv("AIO_USER");
+$io_key = getenv("AIO_KEY");
 
 // ✅ Recupera i parametri dal SIM900
 $feed = $_GET['feed'] ?? $_POST['feed'] ?? '';
